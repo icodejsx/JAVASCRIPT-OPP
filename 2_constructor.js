@@ -4,6 +4,10 @@ function Book(title, author, year) {
     this.title = title;
     this.author = author;
     this.year = year;
+
+    this.getSummary = function () {
+        return `${this.title} was written by ${this.author} on ${this.year}`
+    }
 }
 
 const book1 = new Book('Book One', 'jone doe', '2022');
