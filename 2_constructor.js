@@ -14,4 +14,4 @@ function Book(title, author, year) {
 const book1 = new Book('Book One', 'jone doe', '2022');
 const book2 = new Book('Book two', 'job cak', '2034');
 
-console.log(book1.getSummary());
+console.log(book1);
