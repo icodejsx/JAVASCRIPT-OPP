@@ -7,9 +7,14 @@ function Book(title, author, year) {
 
 // getSummary 
 Book.prototype.getSummary = function () {
-    this.getSummary = function () {
-        return `${this.title} was written by ${this.author} on ${this.year}`
-    }
+    return `${this.title} was written by ${this.author} on ${this.year}`
+
+}
+
+// getAge
+Book.prototype.getAge = function () {
+    const years = new Date().getFullYear() - this.year
+    return `${this.title} is ${years} years old`
 }
 
 
@@ -17,4 +22,4 @@ Book.prototype.getSummary = function () {
 const book1 = new Book('Book One', 'jone doe', '2022');
 const book2 = new Book('Book two', 'job cak', '2034');
 
-console.log(book1.getSummary());
+console.log(book1.getAge());
