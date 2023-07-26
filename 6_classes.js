@@ -9,6 +9,7 @@ class Book {
         return `${this.title} was written by ${this.author} on ${this.year}`
     }
 }
+// 
 
 // instantiating Object 
 const book1 = new Book("Book one", "jondo", '2019')
