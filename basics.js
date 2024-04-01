@@ -1,5 +1,4 @@
-alert("i am Learing Javascript again")
 
-let js = 'Javascript'
+const num = 30.4049
 
-if (js == 'Javascripst') alert(" ok this is nice ")
+console.log(Math.floor(num))
