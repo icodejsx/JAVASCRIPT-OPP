@@ -28,5 +28,15 @@ we have two main types of data types in javascript we have the primitive data ty
 1. objects 
 2. arrays 
 
+### 2 Operators in Javascript 
+1. Addition ++
+2. subtraction --
+3. multiplication * 
+4. Division  /
+5. percentage %% 
+6. OR operators || 
+7. equal to == 
+8. And Operator & &
+
 
 
