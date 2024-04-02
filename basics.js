@@ -65,9 +65,54 @@ console.log(challenge.toUpperCase())
 console.log(challenge.toLowerCase())
 console.log(challenge.substring(2))
 console.log(challenge.includes('script'))
-console.log(typeOf(challenge.split(" ")))
+// console.log(typeOf(challenge.split(" ")))
 
-// boolean 
+// Comparison Operators
+
+console.log(3 > 2)
+console.log(2 > 3)
+console.log(4 >= 4)
+console.log(3 == '3')
+console.log(3 === '3')
+console.log(3 != 3)
+console.log('mango'.length == 'orange'.length)
+
+
+// Logical Operators
+const check = 3 > 4 && 3 > 5
+const check1 = 3 > 4 && 3 > 5 || 3 > 4 && 4 < 3
+console.log(!check1)
+
+
+// Ternary Operators
+
+let constant = true
+
+constant ? console.log("constant is true") : console.log("constant will be false ")
+
+let numbers = 0
+
+numbers > 9 ? console.log(" ok am coming up") : console.log("lets keep going ")
+
+// Window Methods
+
+// let number = prompt('Enter number', 'number goes here')
+// console.log(number)
+
+// const agree = confirm('Are you sure you like to delete? ')
+// console.log(agree)
+
+
+// Date Object
+const now = new Date()
+console.log(now)
+console.log(now.getFullYear())
+
+
+let date = now.getDate()
+
+console.log(now)
+
 
 
 
