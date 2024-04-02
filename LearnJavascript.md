@@ -2,15 +2,13 @@
 
 ## Day 1 : Understand basic concepts (variables, data types, operators)
 
-### 1 Declaring variables in javascript:
-variables in javascript can be declared using the var , let and const key word.
-example: 
-(
-let  Name = "kenechukwu",
-var name  = "kenechukwu",
-const name = "kenechukwu")
+### 1: Declaring variables in javascript:
 
-#### Note While declaring a variable in javascript. it has to do with a variable and its value. as shown ( let is the javascript keyword for declaring vairbles, while "name" is the variable name and "kenechukwu is the value " which is been attached to the variable name )
+variables in javascript can be declared using the var , let and const key word...
+
+example: (let  Name = "kenechukwu", var name = "kenechukwu", const name = " kenechukwu ")
+
+#### Note While declaring a variable in javascript. it has to do with a variable and its value. as shown ( let is the javascript keyword for declaring variables, while "name" is the variable name and "kenechukwu is the value " which is been attached to the variable name )
 
 ### 2 Data types in javascript:
 
@@ -29,14 +27,14 @@ we have two main types of data types in javascript we have the primitive data ty
 2. arrays 
 
 ### 2 Operators in Javascript 
-1. Addition ++
-2. subtraction --
-3. multiplication * 
-4. Division  /
-5. percentage %% 
-6. OR operators || 
-7. equal to == 
-8. And Operator & &
+#### Assignment operators is operators used to assign a value to a variable. "=".
 
+#### Arithmetic Operators: this are operators that are used to perform mathematical operations eg: 
+1. Addition(+): a + b
+2. Subtraction(-): a - b
+3. Multiplication(*): a * b
+4. Division(/): a / b
+5. Modulus(%): a % b
+6. Exponential(**): a ** b
 
 

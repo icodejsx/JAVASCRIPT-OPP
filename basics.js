@@ -67,6 +67,8 @@ console.log(challenge.substring(2))
 console.log(challenge.includes('script'))
 console.log(typeOf(challenge.split(" ")))
 
+// boolean 
+
 
 
 
