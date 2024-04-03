@@ -114,6 +114,36 @@ let date = now.getDate()
 console.log(now)
 
 
+// Day 3: Exercises
+
+let firstName = 'Kenechukwu'
+let lastName = 'Nweke'
+let State = 'Anambra State'
+let Age = 24
+let isMarried = true
+let year = 2024
+
+console.log(typeof (firstName))
+console.log(typeof (lastName))
+console.log(typeof (state))
+console.log(typeof (Age))
+console.log(typeof (isMarried))
+console.log(typeof (year))
+
+let num1 = 10 === '10'
+let num2 = "20" == 20
+
+console.log(num1)
+console.log(num2)
+
+
+let area =
+
+
+
+
+
+
 
 
 
