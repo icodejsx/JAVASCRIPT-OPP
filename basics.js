@@ -137,15 +137,79 @@ console.log(num1)
 console.log(num2)
 
 
-let area =
+// Conditionals
+
+if (20 == 10) {
+    console.log(' i am learin javascrpt')
+} else {
+    console.log('ok lets see')
+}
+
+let numb = 0
+
+if (numb > 0) {
+    console.log(`${numb} is greater than zero`)
+} else if (numb == 0) {
+    console.log(`${numb} is equal than zero`)
+
+} else if (numb != 0) {
+    console.log(`${numb} is not equal than zero`)
+
+} else (
+    console.log("alright ")
+)
+
+// arrays
+
+const arr = Array()
+console.log(arr)
+
+const arr1 = [2, 3, 4, 5, 5, 6, 7, 7, 7]
+console.log(arr1.length)
+
+const arr2 = 'i am learning javascript again hope to master it this time around'
+
+const arr3 = arr2.split(' ')
+
+console.log(arr2[0])
+
+// replaying array items
+
+arr3[0] = 'all'
+console.log(arr3)
 
 
+const fruits = ['banana', 'orange', 'mango', 'lemon']
+
+let index = fruits.indexOf('band')
+console.log(index)
+
+index === -1 ? console.log(" the fruist dosnt exist ") : console.log("the frust exists ")
+
+const de = [...fruits]
+
+console.log(de.slice(0, 3))
+
+console.log(de.splice(2, 4))
+
+console.log(fruits.push('come'))
+
+const numbers3 = [3, 1, 2, 2, 3, 4, 5, 6,]
+numbers3.push(9)
+
+numbers3.sort()
+console.log(numbers3)
+
+// understanding loopps
+
+for (let i = 0; i <= 5; i++) {
+    console.log(i)
+}
 
 
-
-
-
-
+for (let w = 10; w <= 100; w + 1) {
+    console.log(w)
+}
 
 
 
