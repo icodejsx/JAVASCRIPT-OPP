@@ -1,5 +1,7 @@
 // // // Math Object in javascript
 
+const { ObjectFlags } = require("typescript");
+
 // // const num = 30.4049;
 
 // // // to generate random numbers
@@ -325,3 +327,180 @@ function sun(rray) {
 }
 
 console.log(sun([1, 2, 3]));
+
+(function (n) {
+  console.log(n * n);
+})(2);
+
+// (function (n) {
+//   console.log(n * n)
+// })(3)
+
+// let totall = function (arr) {
+//   let sum = 0;
+//   for (let i = 0; i < arr.length; i++) {
+//     sum += arr[i];
+//   }
+//   return sum;
+// };
+
+// let arr = [1, 2, 3, 5];
+
+// console.log(totall);
+
+// const arrow = (i = 10) => {
+//   for (let i = 0; i <= 5; i++) {
+//     console.log(i * i);
+//   }
+//   return i;
+// };
+
+// const name = (firsName = "obi", lasName = "nweke") => {
+//   let firstName = firsName;
+//   let lastName = lasName;
+//   fullName = firstName + " " + lastName;
+//   return fullName;
+// };
+// console.log(name());
+
+// const person = {
+//   firstName: "kene",
+//   lastName: "nweke",
+//   age: 22,
+//   country: "England",
+//   date: 10 / 30 / 12,
+//   skills: [
+//     "HTML",
+//     "CSS",
+//     "JavaScript",
+//     "React",
+//     "Node",
+//     "MongoDB",
+//     "Python",
+//     "D3.js",
+//   ],
+//   getFullname: function () {
+//     fullname = this.firstName + " " + this.lastName;
+//     return fullname;
+//   },
+// };
+
+// console.log(person.getFullname());
+
+// person.date = new Date().getDate();
+// console.log(person.date);
+
+// const copyPerson = Object.assign({}, person);
+
+// copyPerson.skills.push("next");
+
+// console.log(copyPerson);
+
+// // const values = Object.values(copyPerson);
+// // // console.log(values.getFullname());
+
+// const entries = Object.entries(copyPerson);
+// console.log(entries);
+// console.log(copyPerson.hasOwnProperty("lastName"));
+
+// const dog = {};
+// dog.name = "bigdog";
+// dog.legs = 4;
+// (dog.bark = function () {
+//   return "woof  woof";
+// }),
+//   (dog.color = "red"),
+//   (dog.age = 17),
+//   (dog.getDogInfo = function () {
+//     return ` ${this.name} is a big dog  and his age ${this.age} and his ${
+//       this.color
+//     } color also with ${this.legs} and barks ${this.bark()}`;
+//   });
+// console.log(dog.getDogInfo());
+
+// const users = {
+//   Alex: {
+//     email: "alex@alex.com",
+//     skills: ["HTML", "CSS", "JavaScript"],
+//     age: 20,
+//     isLoggedIn: false,
+//     points: 30,
+//   },
+//   Asab: {
+//     email: "asab@asab.com",
+//     skills: [
+//       "HTML",
+//       "CSS",
+//       "JavaScript",
+//       "Redux",
+//       "MongoDB",
+//       "Express",
+//       "React",
+//       "Node",
+//     ],
+//     age: 25,
+//     isLoggedIn: false,
+//     points: 50,
+//   },
+//   Brook: {
+//     email: "daniel@daniel.com",
+//     skills: ["HTML", "CSS", "JavaScript", "React", "Redux"],
+//     age: 30,
+//     isLoggedIn: true,
+//     points: 50,
+//   },
+//   Daniel: {
+//     email: "daniel@alex.com",
+//     skills: ["HTML", "CSS", "JavaScript", "Python"],
+//     age: 20,
+//     isLoggedIn: false,
+//     points: 40,
+//   },
+//   John: {
+//     email: "john@john.com",
+//     skills: ["HTML", "CSS", "JavaScript", "React", "Redux", "Node.js"],
+//     age: 20,
+//     isLoggedIn: true,
+//     points: 50,
+//   },
+//   Thomas: {
+//     email: "thomas@thomas.com",
+//     skills: ["HTML", "CSS", "JavaScript", "React"],
+//     age: 20,
+//     isLoggedIn: false,
+//     points: 40,
+//   },
+//   Paul: {
+//     email: "paul@paul.com",
+//     skills: [
+//       "HTML",
+//       "CSS",
+//       "JavaScript",
+//       "MongoDB",
+//       "Express",
+//       "React",
+//       "Node",
+//     ],
+//     age: 20,
+//     isLoggedIn: false,
+//     points: 40,
+//   },
+// };
+
+// let maxSkills = 0;
+// let userWithMaxSkills = "";
+
+// for (const user in users) {
+//   const numSkills = users[user].skills.length;
+//   if (numSkills > maxSkills) {
+//     maxSkills = numSkills;
+//     userWithMaxSkills = user;
+//   }
+// }
+
+// console.log(maxSkills, userWithMaxSkills);
+
+// for (const user in users) {
+
+//    if (isLoggedIn)
+// }
