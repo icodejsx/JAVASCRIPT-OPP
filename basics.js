@@ -1,6 +1,6 @@
 // // // Math Object in javascript
 
-const { ObjectFlags } = require("typescript");
+// const { ObjectFlags } = require("typescript");
 
 // // const num = 30.4049;
 
@@ -274,7 +274,7 @@ const { ObjectFlags } = require("typescript");
 // } while (m >= 0);
 
 // // for of
-const numb = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// const numb = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 // for (i = 0; i <= numb.length; i++) {
 //   console.log(`${i} * ${i ** 2} ""${i ** 3}`);
@@ -309,28 +309,28 @@ const numb = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 // functions
 
-function func(nu, nu2) {
-  let number = nu;
-  let numbe = nu2;
-  console.log(number * numbe * 2);
-}
-func(6, 20);
+// function func(nu, nu2) {
+//   let number = nu;
+//   let numbe = nu2;
+//   console.log(number * numbe * 2);
+// }
+// func(6, 20);
 
-// a function that sums up the number in an array
+// // a function that sums up the number in an array
 
-function sun(rray) {
-  let sum = 0;
-  for (let i = 0; i < rray.length; i++) {
-    sum = sum + rray[i];
-  }
-  return sum;
-}
+// function sun(rray) {
+//   let sum = 0;
+//   for (let i = 0; i < rray.length; i++) {
+//     sum = sum + rray[i];
+//   }
+//   return sum;
+// }
 
-console.log(sun([1, 2, 3]));
+// console.log(sun([1, 2, 3]));
 
-(function (n) {
-  console.log(n * n);
-})(2);
+// (function (n) {
+//   console.log(n * n);
+// })(2);
 
 // (function (n) {
 //   console.log(n * n)
@@ -504,3 +504,467 @@ console.log(sun([1, 2, 3]));
 
 //    if (isLoggedIn)
 // }
+
+// Higher Order Function
+
+// let n = 2;
+// const callBack = (n) => {
+//   return n ** 2;
+// };
+
+// function cube(callBack, n) {
+//   return callBack(n) * n;
+// }
+
+// console.log(cube(callBack, 3));
+
+// const firstfunc = (m) => {
+//   const secFun = (n) => {
+//     const thirdFunc = (o) => {
+//       const forth = (p) => {
+//         return 2 * m * n * o * p;
+//       };
+//       return forth;
+//     };
+//     return thirdFunc;
+//   };
+//   return secFun;
+// };
+
+// console.log(firstfunc(2)(2)(2)(2));
+
+// const numbers = [1, 3, 4, 5, 6];
+// const sumArry = (arr) => {
+//   let sum = 0;
+
+//   arr.forEach((element) => {
+//     sum = sum + element;
+//   });
+//   return sum;
+// };
+
+// console.log(sumArry(numbers));
+
+// const numbers2 = [2, 3, 4, 5, 6, , 7, , 5, 5, 4];
+// console.log(sumArry(numbers2));
+
+// function sayHello() {
+//   console.log("Hello");
+// }
+// setInterval(sayHello, 10); //
+
+// const arry = [2, 3, 4, 5, 6, 7, 8, 8, 9, 20];
+
+// let sum = 0;
+// arry.forEach((element) => {
+//   sum = sum + element;
+//   return sum;
+// });
+// console.log(sum);
+
+// arry.forEach((element) => console.log(element));
+
+// const countries = ["niger", "gambia ", "america", "mali", "Nigeria"];
+
+// // countries.forEach((country) => console.log(country.toUpperCase()));
+
+// countries.map((country) => console.log(country.toUpperCase().slice(0, 3)));
+
+// const filter = countries.filter((country) => country.length === 4);
+// console.log(filter);
+// const numbers = [1, 3, 2, 4, 5, 5, 4, 3];
+// const square = numbers.map((number) => 2 * number);
+
+// console.log(square);
+
+// const Students = [
+//   { name: "KEN,", score: 34 },
+//   { name: "cals,", score: 54 },
+//   { name: "obi,", score: 35 },
+//   { name: "car,", score: 34 },
+//   { name: "come,", score: 54 },
+//   { name: "send,", score: 36 },
+//   { name: "it,", score: 24 },
+//   { name: "si,", score: 34 },
+// ];
+
+// const sudent = Students.filter((student) => student.score >= 40);
+
+// // console.log(sudent.name, sudent.score);
+
+// const newSet = new Set();
+
+// newSet.add("car");
+// newSet.add("ball");
+// newSet.add("cap");
+
+// console.log(newSet.size);
+
+// for (const set of newSet) {
+//   console.log(set.toUpperCase());
+// }
+
+// const a = [1, 2, 3, 4, 5, 5];
+// const b = [1, 2, 3, 4, 5];
+
+// let A = new Set(a);
+// let B = new Set(b);
+
+// let c = a.filter((num) => B.has(num));
+// let C = new Set(c);
+
+// console.log(C);
+
+// const des = [2, 3, 4, 5, 6, 7, 8];
+
+// let [a, b, c, d, e, f, g, h] = des;
+
+// console.log(a, b, c, d, e, f, g, h);
+// const countries = [
+//   ["Finland", "Helsinki"],
+//   ["Sweden", "Stockholm"],
+//   ["Norway", "Oslo"],
+// ];
+
+// for (const [country] of countries) {
+//   console.log(country);
+// }
+
+//Another Example
+// const person = {
+//   firstName: "Asabeneh",
+//   lastName: "Yetayeh",
+//   age: 250,
+//   country: "Finland",
+//   job: "Instructor and Developer",
+//   skills: [
+//     "HTML",
+//     "CSS",
+//     "JavaScript",
+//     "React",
+//     "Redux",
+//     "Node",
+//     "MongoDB",
+//     "Python",
+//     "D3.js",
+//   ],
+//   languages: ["Amharic", "English", "Suomi(Finnish)"],
+// };
+// // Let us create a function which give information about the person object without destructuring
+
+// let getPersonInfo = `${person.firstName + " " + person.lastName} he is ${
+//   person.age
+// } old `;
+
+// console.log(getPersonInfo);
+
+// // const getPersonInfo = (obj) => {
+// //   const skills = obj.skills;
+// //   const formattedSkills = skills.slice(0, -1).join(", ");
+// //   const languages = obj.languages;
+// //   const formattedLanguages = languages.slice(0, -1).join(", ");
+
+// //   personInfo = `${obj.firstName} ${obj.lastName} lives in ${
+// //     obj.country
+// //   }. He is  ${obj.age} years old. He is an ${
+// //     obj.job
+// //   }. He teaches ${formattedSkills} and ${
+// //     skills[skills.length - 1]
+// //   }. He speaks ${formattedLanguages} and a little bit of ${languages[2]}.`;
+
+// //   return personInfo;
+// // };
+
+// // console.log(getPersonInfo(person));
+
+// // const names = ["Asabeneh", "Brook", "David", "John"];
+// // let [secondPerson, fourthPerson, ...others] = names; // first and third person is omitted
+
+// // console.log(secondPerson, fourthPerson, others);
+
+// const todoList = [
+//   {
+//     task: "Prepare JS Test",
+//     time: "4/1/2020 8:30",
+//     completed: true,
+//   },
+//   {
+//     task: "Give JS Test",
+//     time: "4/1/2020 10:00",
+//     completed: false,
+//   },
+//   {
+//     task: "Assess Test Result",
+//     time: "4/1/2020 1:00",
+//     completed: false,
+//   },
+// ];
+
+// for (const { task, time, completed } of todoList) {
+//   console.log(time, completed, task);
+// }
+
+// const nums1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// let [num1, num2, num3, ...rest] = nums1;
+
+// console.log(num1, num2, num3, ...rest);
+
+// console.log(...rest);
+
+// const evens = [0, 2, 4, 6, 8, 10];
+// const evenNumbers = [...evens];
+
+// const odds = [1, 3, 5, 7, 9];
+// const oddNumbers = [...odds];
+
+// const wholeNumbers = [...evens, ...odds];
+
+// console.log(evenNumbers);
+// console.log(oddNumbers);
+// console.log(wholeNumbers);
+
+// let frontend = ["html", "css", "js"];
+// let backend = ["sql", "express", "node"];
+
+// let fullStacl = [...frontend, ...backend];
+
+// console.log(fullStacl);
+
+// const arrys = [1, 2, 3, 4, 5, 6];
+
+// const sum = (...arrys) => {
+//   let sum = 0;
+//   for (const arry of arrys) sum += arry;
+//   return sum;
+// };
+
+// console.log(sum(arrys));
+
+// const users = [
+//   {
+//     name: "Brook",
+//     scores: 75,
+//     skills: ["HTM", "CSS", "JS"],
+//     age: 16,
+//   },
+//   {
+//     name: "Alex",
+//     scores: 80,
+//     skills: ["HTM", "CSS", "JS"],
+//     age: 18,
+//   },
+//   {
+//     name: "David",
+//     scores: 75,
+//     skills: ["HTM", "CSS"],
+//     age: 22,
+//   },
+//   {
+//     name: "John",
+//     scores: 85,
+//     skills: ["HTML"],
+//     age: 25,
+//   },
+//   {
+//     name: "Sara",
+//     scores: 95,
+//     skills: ["HTM", "CSS", "JS"],
+//     age: 26,
+//   },
+//   {
+//     name: "Martha",
+//     scores: 80,
+//     skills: ["HTM", "CSS", "JS"],
+//     age: 18,
+//   },
+//   {
+//     name: "Thomas",
+//     scores: 90,
+//     skills: ["HTM", "CSS", "JS"],
+//     age: 20,
+//   },
+// ];
+
+// for (const { name, score, skills, age } of users) {
+//   if (skills.length > 2) {
+//     console.log(user);
+//   }
+// }
+
+// // Partern / match
+
+// const str = " i love javscript";
+// const partern = /love/;
+// partern.test(str) ? console.log(partern) : console.log("cant work");
+
+// console.error("This is an error message");
+
+// const user = {
+//   name: "Asabeneh",
+//   title: "Programmer",
+//   country: "Finland",
+//   city: "Helsinki",
+//   age: 250,
+// };
+// console.table(user);
+
+// const users = [
+//   {
+//     name: "Asabeneh",
+//     title: "Programmer",
+//     country: "Finland",
+//     city: "Helsinki",
+//     age: 250,
+//   },
+//   {
+//     name: "Eyob",
+//     title: "Teacher",
+//     country: "Sweden",
+//     city: "London",
+//     age: 25,
+//   },
+//   {
+//     name: "Asab",
+//     title: "Instructor",
+//     country: "Norway",
+//     city: "Oslo",
+//     age: 22,
+//   },
+//   {
+//     name: "Matias",
+//     title: "Developer",
+//     country: "Denmark",
+//     city: "Copenhagen",
+//     age: 28,
+//   },
+// ];
+// console.table(users);
+
+// try and catch in javascript
+
+// try {
+//   let name = "kenechukwu";
+//   let fullName = name + " " + LastNae;
+//   console.log(fullName);
+// } catch (err) {
+//   console.log('Name of the error', err.name)
+//   console.log('Error message', err.message)
+// } finally {
+//   console.log("just show anyway s ");
+// }
+
+// async function asyncNew(loopSize) {
+//   try {
+//     async function result(loopSize) {
+//       for (let i = 0; i <= loopSize; i++) console.log(i);
+
+//       console.log("execution of async operation completed");
+//     }
+//     await result(loopSize);
+//   } catch (error) {
+//     console.error("Error Occurred:", error.message);
+//   }
+// }
+// asyncNew(100);
+// console.log("waiting for async operation to complete");
+
+// const url = "https://restcountries.com/v2/all";
+// fetch(url)
+//   .then((response) => response.json())
+//   .then((data) => {
+//     console.log(data);
+//   })
+//   .catch((error) => console.error(error));
+
+// const fetchData = async () => {
+//   try {
+//     const response = await fetch(url);
+//     const countries = await response.json();
+//     console.log(countries);
+//   } catch (err) {
+//     console.error(err);
+//   }
+// };
+// console.log("===== async and await");
+// fetchData();
+
+// classes
+
+// class ClassName {
+//   constructor(FirstName, LastName) {
+//     console.log(this);
+//     this.FirstName = FirstName;
+//     this.LastName = LastName;
+//   }
+// }
+
+// const person = new ClassName("Kenechuwu", "nweke");
+
+// console.log(person);
+
+// const user = {
+//   firstName: "Asabeneh",
+//   age: 250,
+//   skills: ["HTML", "CSS", "JS", "React"],
+// };
+
+// const userText = JSON.stringify(user, undefined, 4);
+// localStorage.setItem("user", userText);
+
+// //syntax
+// let firstName = localStorage.getItem("firstName");
+// let age = localStorage.getItem("age");
+// let skills = localStorage.getItem("skills");
+// console.log(firstName, age, skills);
+
+// const doPromise = new Promise((resolve, reject) => {
+//   setTimeout(() => {
+//     const skills = ["html", "css", "js"];
+
+//     if (skills.includes("css")) {
+//       resolve("fullstack developer");
+//     } else reject("something went wrong ");
+//   }, 10);
+// });
+
+// doPromise
+//   .then((result) => {
+//     console.log(result);
+//   })
+//   .catch((err) => {
+//     console.log(err);
+//   });
+
+// console.log("promise loading....");
+
+// fatching data from an Api
+
+const url = "https://restcountries.com/v2/all";
+// fetch(url)
+//   .then((response) => response.json())
+//   .then((data) => {
+//     console.log(data);
+//   })
+//   .catch((err) => console.error(err));
+
+// const square = async function (n) {
+//   setTimeout((n) => {
+//     return n * n;
+//   }, 20000);
+// };
+
+// const wait = await console.log(square(2));
+
+// console.log("awaiting ");
+
+const data = async () => {
+  try {
+    const response = await fetch(url);
+    const country = await response.json();
+    console.log(country);
+  } catch (err) {
+    console.log(err);
+  }
+};
+
+data();
